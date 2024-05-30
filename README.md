@@ -1,3 +1,6 @@
+
+https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue
+
 # Aplicativo para Gerenciamento de Ativos
 
 Este é um aplicativo Flask simples para gerenciar ativos. Ele permite visualizar, inserir, atualizar e excluir ativos de uma base de dados.
