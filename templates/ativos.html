@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}Ativos Cadastrados{% endblock %}
+
+{% block content %}
+    <h1 class="title">Ativos Cadastrados</h1>
+
+    <div class="columns is-multiline">
+        {% for key, ativo in ativos.items() %}
+        <div class="column is-one-quarter">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="{{ ativo.imageURL }}" alt="{{ ativo.nome }}">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-content">
+                            <p class="title is-4">{{ ativo.nome }}</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p><strong>Projeto:</strong> {{ ativo.anv_PRJ }}</p>
+                        <p><strong>Descrição:</strong> {{ ativo.descricao }}</p>
+                        <p><strong>Etiqueta:</strong> {{ ativo.etiqueta }}</p>
+                        <p><strong>Local:</strong> {{ ativo.local }}</p>
+                        <p><strong>Número do Ativo:</strong> {{ ativo.numero_ativo }}</p>
+                        <p><strong>Subclasse:</strong> {{ ativo.subclasse }}</p>
+                        <p><strong>Sublocalização:</strong> {{ ativo.sublocalizacao }}</p>
+                    </div>
+                </div>
+                <footer class="card-footer">
+                    <a href="{{ url_for('main.update', id=key) }}" class="card-footer-item">Atualizar</a>
+                    <form action="{{ url_for('main.delete', id=key) }}" method="post" class="card-footer-item">
+                        <button type="submit" class="button is-danger is-light">Deletar</button>
+                    </form>
+                </footer>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}

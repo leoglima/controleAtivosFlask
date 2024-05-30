@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block title %}Inserir Novo Ativo{% endblock %}
+
+{% block content %}
+    <h1 class="title">Inserir Novo Ativo</h1>
+    <form method="post">
+        {{ form.hidden_tag() }}
+        <div class="field">
+            {{ form.nome.label(class="label") }}
+            <div class="control">
+                {{ form.nome(class="input") }}
+            </div>
+        </div>
+        <div class="field">
+            {{ form.anv_PRJ.label(class="label") }}
+            <div class="control">
+                {{ form.anv_PRJ(class="input") }}
+            </div>
+        </div>
+        <div class="field">
+            {{ form.descricao.label(class="label") }}
+            <div class="control">
+                {{ form.descricao(class="input") }}
+            </div>
+        </div>
+        <div class="field">
+            {{ form.etiqueta.label(class="label") }}
+            <div class="control">
+                {{ form.etiqueta(class="input") }}
+            </div>
+        </div>
+        <div class="field">
+            {{ form.imageURL.label(class="label") }}
+            <div class="control">
+                {{ form.imageURL(class="input") }}
+            </div>
+        </div>
+        <div class="field">
+            {{ form.local.label(class="label") }}
+            <div class="control">
+                {{ form.local(class="input") }}
+            </div>
+        </div>
+        <div class="field">
+            {{ form.numero_ativo.label(class="label") }}
+            <div class="control">
+                {{ form.numero_ativo(class="input") }}
+            </div>
+        </div>
+        <div class="field">
+            {{ form.subclasse.label(class="label") }}
+            <div class="control">
+                {{ form.subclasse(class="input") }}
+            </div>
+        </div>
+        <div class="field">
+            {{ form.sublocalizacao.label(class="label") }}
+            <div class="control">
+                {{ form.sublocalizacao(class="input") }}
+            </div>
+        </div>
+        <div class="control">
+            {{ form.submit(class="button is-link") }}
+        </div>
+    </form>
+    <a class="button is-link" href="{{ url_for('main.ativos_cadastrados') }}">Voltar</a>
+{% endblock %}
