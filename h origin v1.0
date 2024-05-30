@@ -1,0 +1,63 @@
+[33mtag v1.0[m
+Tagger: Leonardo Lima <leonardo.glima@live.com>
+Date:   Thu May 30 01:55:04 2024 -0300
+
+Primeira versão
+
+[33mcommit a537798503b0002c0c2ad6ae4137949fb3ea708e[m[33m ([m[1;33mtag: [m[1;33mv1.0[m[33m)[m
+Author: Leonardo Lima <leonardo.glima@live.com>
+Date:   Thu May 30 01:50:12 2024 -0300
+
+    first commit
+
+[1mdiff --git a/README.md b/README.md[m
+[1mnew file mode 100644[m
+[1mindex 0000000..01f383d[m
+[1m--- /dev/null[m
+[1m+++ b/README.md[m
+[36m@@ -0,0 +1,44 @@[m
+[32m+[m[32m# Aplicativo para Gerenciamento de Ativos[m
+[32m+[m
+[32m+[m[32mEste é um aplicativo Flask simples para gerenciar ativos. Ele permite visualizar, inserir, atualizar e excluir ativos de uma base de dados.[m
+[32m+[m
+[32m+[m[32m## Características[m
+[32m+[m
+[32m+[m[32m- Exibir todos os ativos cadastrados.[m
+[32m+[m[32m- Inserir novos ativos.[m
+[32m+[m[32m- Atualizar os dados de um ativo existente.[m
+[32m+[m[32m- Excluir ativos.[m
+[32m+[m
+[32m+[m[32m## Tecnologias Utilizadas[m
+[32m+[m
+[32m+[m[32m- **Flask**: Um framework web leve para Python.[m
+[32m+[m[32m- **Firebase Realtime Database**: Um banco de dados em tempo real hospedado na nuvem.[m
+[32m+[m[32m- **Bulma**: Uma biblioteca CSS para estilização responsiva.[m
+[32m+[m
+[32m+[m[32m## Instalação[m
+[32m+[m
+[32m+[m[32m1. Clone o repositório:[m
+[32m+[m
+[32m+[m[32m   ```bash[m
+[32m+[m[32m   git clone https://github.com/seu-usuario/nome-do-repositorio.git[m
+[32m+[m[32m    ````[m
+[32m+[m[32m2. Instale as dependências:[m
+[32m+[m[41m   [m
+[32m+[m[32m   ```bash[m
+[32m+[m[32m   pip install -r requirements.txt[m
+[32m+[m[32m   ````[m
+[32m+[m[32m3. Execute o aplicativo[m
+[32m+[m[41m   [m
+[32m+[m[32m   ```bash[m
+[32m+[m[32m   python app.py[m
+[32m+[m[32m   ````[m[41m  [m
+[32m+[m[32m 4. Acesse http://127.0.0.1:5000/ no seu navegador para utilizar o aplicativo.[m
+[32m+[m
+[32m+[m[32m## USO[m
+[32m+[m[32mAo acessar a página inicial, você verá opções para visualizar ativos cadastrados ou inserir um novo ativo.[m
+[32m+[m[32mNa página de visualização de ativos, você pode ver todos os ativos cadastrados em forma de cards, cada um exibindo detalhes do ativo, incluindo uma imagem.[m
+[32m+[m[32mPara inserir um novo ativo, clique em "Inserir Novo Ativo" na página inicial e preencha o formulário fornecido.[m
+[32m+[m[32mPara atualizar ou excluir um ativo existente, clique nos botões "Atualizar" ou "Deletar" respectivamente, ao visualizar os detalhes de um ativo.[m
+[32m+[m
+[32m+[m[32m## Licença[m
+[32m+[m[32mEste projeto está licenciado sob a Licença MIT.[m
+\ No newline at end of file[m
